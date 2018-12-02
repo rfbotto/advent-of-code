@@ -1,6 +1,7 @@
 import * as fs from 'fs'
+import * as path from 'path'
 
-const FILE_PATH = __dirname + '/input.txt'
+const FILE_PATH = path.join(__dirname, '../', 'input.txt')
 
 fs.readFile(FILE_PATH, 'utf8', (err: Error, data: string) => {
     if (err) throw err;
